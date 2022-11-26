@@ -31,3 +31,9 @@ Route::group(['prefix' => 'report'], function () {
     Route::post('get-general', 'ReportController@getReportGeneral');
     Route::get('get-ubicacion', 'ReportController@getUbicacion');
 });
+
+
+Route::group(['prefix' => 'travel'], function () {
+    Route::get('get-customer', 'CustomerController@getData');
+    Route::post('post-customer', 'CustomerController@postCustumer');
+});
